@@ -16,7 +16,9 @@ jobs:
       
       # Indique au robot d'entrer dans le dossier greetingApp pour compiler
       - name: Build & Test Backend
-        run: mvn -f greetingApp/pom.xml clean package
+        run: |
+          chmod +x greetingApp/mvnw
+          ./greetingApp/mvnw -f greetingApp/pom.xml clean package
 
   deploy:
     needs: audit-backend
