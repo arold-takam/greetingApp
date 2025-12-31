@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Ping Render Backend
         run: |
-          curl -f https://ton-url-backend.onrender.com/api/actuator/health || echo "Backend is waking up..."
+          curl -f https://greeting-backend-n0f1.onrender.com/api/actuator/health || echo "Waking up..."
