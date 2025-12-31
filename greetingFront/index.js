@@ -1,9 +1,11 @@
 // Fonction pour récupérer le message
+import {API_BASE_URL} from "./config.js";
+
 async function loadGreeting() {
     const messageElement = document.querySelector(".message p");
 
     try {
-        const response = await fetch('http://localhost:8080/api/greets/get/default');
+        const response = await fetch(`${API_BASE_URL}/api/greets/get/default`);
 
         if (!response.ok) throw new Error("Erreur réseau");
 
