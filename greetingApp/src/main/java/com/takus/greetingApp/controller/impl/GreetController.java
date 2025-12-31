@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(path = "/greets")
+@CrossOrigin(origins="-")
 public class GreetController implements com.takus.greetingApp.controller.GreetController {
 	private final GreetService service;
 	

@@ -1,0 +1,82 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: xx-large;
+}
+
+& body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    height: 100vh;
+
+    & .message{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 16rem;
+
+        & p{
+            font-size: large;
+            line-height: 1rem;
+            text-align: center;
+        }
+    }
+
+    & .manageSms{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1rem;
+        width: 16rem;
+
+        & label{
+            font-size: x-large;
+        }
+
+        & .put{
+            width: 100%;
+            aspect-ratio: 16/9;
+            border-radius: .5rem;
+            padding: 1rem;
+        }
+
+        & .cta{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            gap: 1rem;
+
+            & button {
+                width: 100%;
+                background-color: transparent;
+                border: none;
+                border-radius: .5rem;
+                font-size: large;
+                padding: .3rem;
+                transition: all .3s ease;
+
+                &:hover {
+                    cursor: pointer;
+                    font-weight: bold;
+                    border: 2px solid black;
+                }
+            }
+            & .reset{
+                border: 1px solid black;
+            }
+            & .send{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
