@@ -3,8 +3,22 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Greeting project</title>
+	<link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1>Greeting project for devOps ans CICD</h1>
+    <section class="message">
+	    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias atque cum doloribus ea eum fuga inventore labore nisi quos ullam? Deserunt, eos iusto minima optio possimus quis rerum sapiente ut!</p>
+    </section>
+    <form class="manageSms">
+	    <label for="put">Type your message below</label>
+	    <textarea name="content" id="put" class="put" required></textarea>
+	    <div class="cta">
+		    <button type="button" class="reset">RESET</button>
+		    <button type="submit" class="send">CHANGE MESSAGE</button>
+	    </div>
+    </form>
+    
+    <script type="module" src="index.js"></script>
 </body>
 </html>
