@@ -17,7 +17,7 @@ public class GreetService implements com.takus.greetingApp.service.GreetService 
 	@Override
 	public Greet defaultGreeting() {
 		Greet greet = new Greet();
-		greet.setMessage("HELLO WORLD !");
+		greet.setMessage("Happy new year 2026 !");
 		
 		return greet;
 	}
