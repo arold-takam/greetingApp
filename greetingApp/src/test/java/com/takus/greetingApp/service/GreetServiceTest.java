@@ -22,6 +22,6 @@ public class GreetServiceTest {
 		Greet result = service.defaultGreeting();
 		
 		// Vérification rigoureuse
-		assertEquals("HELLO WORLD !", result.getMessage(), "Le message par défaut doit être HELLO WORLD !");
+		assertEquals("Happy new year 2026 !", result.getMessage(), "Le message par défaut doit être Happy new year 2026 !");
 	}
 }
